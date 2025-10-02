@@ -2,7 +2,7 @@
   "model": {
     "path": "./modelo_treinado/best.pt",
     "fallback_path": "yolov8n-seg.pt",
-    "confidence_threshold": 0.4832797427652733,
+    "confidence_threshold": 0.5038585209003216,
     "iou_threshold": 0.2980707395498392
   },
   "camera": {
