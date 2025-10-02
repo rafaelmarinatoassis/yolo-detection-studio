@@ -112,7 +112,6 @@ dmypy.json
 *.pt
 *.pth
 *.ckpt
-!modelo_treinado/best.pt
 
 # YOLO specific
 runs/
@@ -221,6 +220,5 @@ requirements_freeze.txt
 !.github/
 
 # YOLO Models (too large for GitHub)
-modelo_treinado/best.pt
 modelo_treinado/*.pt
 *.pt
