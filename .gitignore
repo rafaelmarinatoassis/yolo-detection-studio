@@ -219,3 +219,8 @@ requirements_freeze.txt
 .*
 !.gitignore
 !.github/
+
+# YOLO Models (too large for GitHub)
+modelo_treinado/best.pt
+modelo_treinado/*.pt
+*.pt
