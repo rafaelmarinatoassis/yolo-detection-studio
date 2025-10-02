@@ -1,7 +1,22 @@
 # 🎯 YOLO Detection Studio
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.5+-green.svg)
+![O## 🚀 Uso Rápido
+
+### Execução Simplificada
+
+Para usar o sistema rapidamente:
+
+1. **Execute o launcher automático:**
+```bash
+start.bat
+```
+
+2. **Aguarde a configuração automática** (primeira execução)
+3. **A interface gráfica abrirá automaticamente**
+4. **Clique em "Iniciar Câmera" → "Iniciar Detecção"**
+
+### Interface PrincipalCV](https://img.shields.io/badge/OpenCV-4.5+-green.svg)
 ![YOLO](https://img.shields.io/badge/YOLO-v8-red.svg)
 ![Ultralytics](https://img.shields.io/badge/Ultralytics-8.0+-purple.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -50,16 +65,17 @@ git clone https://github.com/rafaelmarinatoassis/yolo-detection-studio.git
 cd yolo-detection-studio
 ```
 
-2. **Execute o script de setup:**
+2. **Execute o launcher:**
 ```bash
-setup.bat
+start.bat
 ```
 
 O script irá automaticamente:
-- Criar ambiente virtual Python
-- Instalar todas as dependências
-- Configurar o projeto
-- Executar a aplicação
+- Criar ambiente virtual Python (se não existir)
+- Ativar o ambiente virtual
+- Atualizar pip para a versão mais recente
+- Instalar/atualizar todas as dependências
+- Executar a aplicação YOLO Detection Studio
 
 ### Instalação Manual
 
@@ -187,7 +203,7 @@ O projeto segue o padrão **MVC (Model-View-Controller)**:
 ├── 📄 app.py                    # Launcher principal
 ├── 📄 config.json              # Configurações
 ├── 📄 requirements.txt         # Dependências
-├── 📄 setup.bat               # Script de instalação
+├── 📄 start.bat               # Script de execução automática
 ├── 📁 controllers/
 │   └── 📄 main_controller.py   # Controlador principal
 ├── 📁 models/
@@ -245,6 +261,18 @@ O projeto utiliza:
 - **Tratamento de erros** robusto com fallbacks
 - **Type hints** para melhor documentação do código
 - **Logging** estruturado para debug e monitoramento
+
+### Launcher Automático (start.bat)
+
+O arquivo `start.bat` é um launcher inteligente que:
+
+- ✅ **Verifica Python**: Confirma se Python está instalado
+- ✅ **Cria ambiente virtual**: Automaticamente se não existir
+- ✅ **Ativa ambiente**: Sempre usa o ambiente virtual isolado
+- ✅ **Atualiza pip**: Garante a versão mais recente do pip
+- ✅ **Instala dependências**: Atualiza requirements.txt automaticamente
+- ✅ **Executa aplicação**: Inicia o YOLO Detection Studio
+- ✅ **Tratamento de erros**: Mensagens claras em caso de problemas
 
 ### Adicionando Novas Funcionalidades
 
