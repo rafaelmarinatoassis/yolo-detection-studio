@@ -46,7 +46,7 @@
 
 1. **Clone o repositório:**
 ```bash
-git clone https://github.com/seu-usuario/yolo-detection-studio.git
+git clone https://github.com/rafaelmarinatoassis/yolo-detection-studio.git
 cd yolo-detection-studio
 ```
 
