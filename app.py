@@ -16,6 +16,12 @@ def main():
         # Verificar dependências
         print("🔍 Verificando dependências...")
         
+        # Criar pasta modelo_treinado se não existir
+        modelo_dir = "./modelo_treinado"
+        if not os.path.exists(modelo_dir):
+            os.makedirs(modelo_dir, exist_ok=True)
+            print(f"📁 Pasta criada automaticamente: {modelo_dir}")
+        
         # Importar e executar controlador principal
         from controllers.main_controller import MainController
         

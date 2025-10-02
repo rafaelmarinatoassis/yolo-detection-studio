@@ -38,8 +38,8 @@ class ConfigManager:
         """Retorna configuração padrão"""
         return {
             "model": {
-                "path": "../Modelos/runs/segment/train/weights/best.pt",
-                "fallback_path": "../Modelos/yolov8n-seg.pt",
+                "path": "./modelo_treinado/best.pt",
+                "fallback_path": "yolov8n-seg.pt",
                 "confidence_threshold": 0.15,
                 "iou_threshold": 0.5
             },

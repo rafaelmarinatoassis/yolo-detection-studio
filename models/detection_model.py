@@ -29,8 +29,14 @@ class DetectionModel:
     def carregar_modelo(self):
         """Carrega modelo YOLO"""
         try:
-            # Tentar carregar modelo principal
+            # Verificar e criar pasta modelo_treinado se não existir
             model_path = self.config.get('model.path')
+            model_dir = os.path.dirname(model_path)
+            if model_dir and not os.path.exists(model_dir):
+                os.makedirs(model_dir, exist_ok=True)
+                print(f"📁 Pasta criada: {model_dir}")
+            
+            # Tentar carregar modelo principal
             if os.path.exists(model_path):
                 model = YOLO(model_path)
                 print(f"✅ Modelo principal carregado: {model_path}")
